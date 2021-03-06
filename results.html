@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>DisplaCify</title>
+</head>
+<body>
+    <div>
+        <h2>Display NER in flask </h2>
+    </div>
+    <div>
+        <h2>Orginal Text</h2>
+        {{ rawtext }}
+    </div>
+
+    <div>
+        <h2>Result Text</h2>
+        {{ result|markdown }}
+        <button onclick="goBack()">Go Back</button>
+
+        <script>
+        function goBack() {
+        window.history.back();
+        }
+        </script>
+    </div>
+
+</body>
+</html>
